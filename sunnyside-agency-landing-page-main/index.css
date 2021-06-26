@@ -1,8 +1,11 @@
+:root{
+    --color-white: #FFFFFF
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: blue;
 }
 
 li{
@@ -12,8 +15,10 @@ li{
 a{
     text-decoration: none;
 }
-.header{
-    border-bottom: 1px solid #E2E8F0;
+
+.main{
+    background-image: url(/images/desktop/image-header.jpg);
+
 }
 
 .navbar{
@@ -49,6 +54,17 @@ a{
 
 .hamburger {
     display: none;
+}
+
+.header .navbar ul li a{
+    color: var(--color-white);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.header .navbar ul li button a{
+    font-family: "Fraunces", serif;
 }
 
 @media (max-width: 768px){

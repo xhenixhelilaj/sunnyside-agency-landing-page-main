@@ -7,8 +7,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+ body{
+     font-size: 18px;
+     padding: 0;
+     margin: 0;
+ }
 
 li{
+
     list-style: none;
 }
 
@@ -16,55 +22,9 @@ a{
     text-decoration: none;
 }
 
-.main{
-    background-image: url(/images/desktop/image-header.jpg);
-
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem; 
-}
-
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-item{
-    margin-left: 5rem;
-}
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: white;
-}
-.nav-link:hover{
-    cursor: pointer;
-}
-
-.nav-logo{
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.hamburger {
-    display: none;
-}
-
-.header .navbar ul li a{
-    color: var(--color-white);
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.header .navbar ul li button a{
-    font-family: "Fraunces", serif;
+header{
+    padding: 2rem;
+    width: 100%;
 }
 
 @media (max-width: 768px){

@@ -27,6 +27,68 @@ header{
     width: 100%;
 }
 
+.hamburger-icon{
+    display: none;
+}
+header nav{
+    display: flex;
+    justify-content: between;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li a{
+    color: var(--color-white);
+    cursor: pointer;
+    font-family: "Barlow", sans-serif;
+}
+header nav ul li:last-child a{
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.5rem;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s;
+    font-family: "Fraunces", serif;
+    font-size: 0.8rem;
+}
+header nav ul li:last-child a:hover{
+    background: hsla(0, 0%, 100%, 0.37);
+    color: var(--color-white);
+}
+.toggle{
+    display: flex !important;
+}
+
+/*showcase*/
+.showcase{
+    background-image: url("/images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showcase-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showcase-text h1{
+    font-family: "Fraunces", serif;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    margin: 4rem 0;
+}
+
+/*features*/
+
 @media (max-width: 768px){
     .nav-menu{
         position: fixed;

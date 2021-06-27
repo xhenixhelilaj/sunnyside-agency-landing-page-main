@@ -39,10 +39,14 @@ header nav ul{
     display: flex;
     justify-content: space-around;
 }
+header nav ul li {
+    margin: 0 1rem;
+}
 header nav ul li a{
     color: var(--color-white);
     cursor: pointer;
     font-family: "Barlow", sans-serif;
+
 }
 header nav ul li:last-child a{
     padding: 0.8rem 1.6rem;
@@ -179,6 +183,21 @@ header nav ul li:last-child a:hover{
     color: hsl(198, 62%, 26%);
 }
 /*clients*/
+.testimonials {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 6rem;
+    background: hsla(42, 92%, 90%, 0.192);
+}
+.testimonials h2{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    margin: 3rem 0;
+    letter-spacing: 0.3rem;
+}
 .clients{
     display: flex;
     justify-content: space-between;

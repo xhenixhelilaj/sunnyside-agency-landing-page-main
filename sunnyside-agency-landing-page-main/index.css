@@ -88,7 +88,208 @@ header nav ul li:last-child a:hover{
 }
 
 /*features*/
-
+.features{
+    min-height: 100vh;
+}
+.features-item{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+}
+.features-item-content{
+    flex-basis: 50%;
+    margin: auto;
+    padding: 0 10%;
+}
+.features-item-content h2{
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    color: hsl(212, 27%, 19%);
+}
+.features-item-content p{
+    color: rgb(148, 143, 143);
+    font-family: "Barlow", sans-serif;
+    line-height: 1.8rem;
+    margin-bottom: 3em;
+}
+.learn-more{
+    color: hsl(212, 27%, 19%);
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    position: relative;
+}
+.learn-more::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -0.25rem;
+    z-index: -1;
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 1rem;
+    opacity: 0.36;
+}
+.learn-more-left::after{
+    background-color: hsl(51, 100%, 49%);
+}
+.learn-more:hover:active{
+    opacity: 1;
+}
+.features-item-img{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.features-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.features-background {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3.5rem;
+}
+.features-background h2{
+    font-family: "Fraunces", serif;
+    margin-bottom: 1rem;
+}
+.features-background p{
+    font-family: "Barlow", serif;
+    text-align: center;
+}
+.features-background-left {
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+    color: hsl(167, 40%, 24%);
+}
+.features-background-right {
+    background-image: url("/images/desktop/image-photography.jpg");
+    color: hsl(198, 62%, 26%);
+}
+/*clients*/
+.clients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.client img{
+    border-radius: 100%;
+    margin-bottom: 3rem;
+}
+.client-comment{
+    color: hsl(198, 62%, 26%);
+    font-family: "Barlow", sans-serif;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+.client-name{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+.client-job{
+    font-family: "Barlow", sans-serif;
+    color: rgb(148, 143, 143);
+    font-size: 0.8rem;
+}
+/*gallery*/
+.gallery{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+.gallery-item{
+    flex-basis: 25%;
+    height: 100%;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*footer*/
+footer {
+    background: hsl(168, 32%, 55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav ul {
+    display: flex;
+    margin-bottom: 4rem;
+}
+footer nav ul li {
+    margin: 0 2rem;
+}
+footer nav .logo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    width: 100%;
+    margin: 2rem 0;
+}
+footer nav .logo img {
+    width: 80%;
+    height: auto;
+    filter: invert(1);
+}
+.logo-path{
+    fill:  hsl(167, 40%, 24%);
+}
+footer a {
+    color: hsl(167, 40%, 24%);
+    font-family: "Barlow", sans-serif;
+    transition: all 0.3s;
+}
+footer a path {
+    transition: all 0.3s;
+}
+footer a:hover {
+    color: var(--color-white);
+}
+footer a:hover path {
+    fill: var(--color-white);
+}
+.icons{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.icons li{
+    margin: 0 1rem;
+}
+.credit{
+    font-size: 11px;
+    text-align: center;
+}
+.credit a {
+    color: hsl(228, 45%, 44%) !important;
+}
+.credit a:hover {
+    color: var(--wite-color) !important;
+}
 @media (max-width: 768px){
     .nav-menu{
         position: fixed;

@@ -1,10 +1,9 @@
-const hamburger = document.querySelector(".hamburger")
-const navMenu = document.querySelector(".nav-menu")
+const hamburger = document.querySelector(".hamburger-icon")
+const menu = document.querySelector(".menu")
 
-hamburger.addEventListener("click", mobileMenu)
+hamburger.addEventListener("click", toggle)
 
-function mobileMenu(){
-    hamburger.classList.toggle("active")
-    navMenu.classList.toggle("active")
+function toggle(){
+    menu.classList.toggle("toggle")
 
 }

@@ -333,8 +333,72 @@ footer a:hover path {
         border-radius: 4px 0 4px 4px;
         background-color: var(--color-white);
         flex-wrap: wrap;
+    }
+    header nav ul::before{
+        content: "";
+        position: absolute;
 
     }
+    header nav ul li{
+        flex-basis: 50%;
+        text-align: center;
+        margin-bottom: 1rem ;
+    }
+    header nav ul li a{
+        color: rgb(148, 143, 143) ;
+    }
+    header nav ul li:last-child a{
+        background-color: hsl(51, 100%, 49%)
+    }
+    header nav ul li:last-child a:hover{
+        background-color:  rgb(61, 190, 255);
 
+    }
+    .features-item {
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+    .features-item:first-child {
+        flex-wrap: wrap-reverse;
+    }
+    .features-item:last-child {
+        height: 200vh;
+    }
+    .features-item-content {
+        flex-basis: 100%;
+        height: 60%;
+        text-align: center;
+        padding: 2rem;
+    }
+    .features-item-img {
+        flex-basis: 100%;
+        height: 40%;
+    }
+    .features-background {
+        flex-basis: 100%;
+        height: 50%;
+    }
+    .features-background h2{
+        font-size: 2.5rem;
+    }
+    .features-background p2{
+        font-size: 1.2rem;
+    }
+
+    .clients{
+        flex-wrap: wrap;
+    }
+    .client{
+       width: 100%; 
+       margin-bottom: 4rem ;
+    }
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery-item{
+        flex-basis: 50%;
+        width: 100%;
+        height: 50%;
+    }
 
 }

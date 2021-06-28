@@ -124,7 +124,7 @@ header nav ul li:last-child a:hover{
 .learn-more{
     color: hsl(212, 27%, 19%);
     font-family: "Fraunces", serif;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 0 0.5rem;
     position: relative;
@@ -133,18 +133,23 @@ header nav ul li:last-child a:hover{
     content: "";
     display: block;
     position: absolute;
+    left: 0;
     bottom: -0.25rem;
     z-index: -1;
     width: 100%;
     height: 0.7rem;
     border-radius: 1rem;
     opacity: 0.36;
+
 }
 .learn-more-left::after{
     background-color: hsl(51, 100%, 49%);
 }
 .learn-more:hover:active{
     opacity: 1;
+}
+.learn-more-right::after {
+    background-color: hsl(7, 99%, 70%);
 }
 .features-item-img{
     flex-basis: 50%;
@@ -373,6 +378,7 @@ footer a:hover path {
     .features-item-img {
         flex-basis: 100%;
         height: 40%;
+        
     }
     .features-background {
         flex-basis: 100%;
